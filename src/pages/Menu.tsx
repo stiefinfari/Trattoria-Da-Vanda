@@ -121,7 +121,7 @@ const Menu = () => {
 
         {/* Menu Sections */}
         <div className="max-w-4xl mx-auto space-y-20">
-          {menuCategories.map((cat, idx) => (
+          {menuCategories.map((cat) => (
             <motion.section 
               key={cat.id} 
               id={cat.id}

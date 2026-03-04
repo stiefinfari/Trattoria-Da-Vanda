@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Search, Calendar, User, Tag, ArrowRight } from 'lucide-react';
+import { Search, Calendar, User, ArrowRight } from 'lucide-react';
 
 // Mock Blog Data
 const blogPosts = [

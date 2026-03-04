@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
-import { Wifi, Coffee, Wind, Bath, Clock, CheckCircle, Mail, Phone, Calendar, User } from 'lucide-react';
-import { useState } from 'react';
+import { Wifi, Coffee, Wind, Bath, Clock, Mail, Calendar, User } from 'lucide-react';
 
 const BnB = () => {
-  const [showForm, setShowForm] = useState(false);
 
   const amenities = [
     { icon: <Wifi size={24} />, name: "Wi-Fi Gratuito" },
@@ -33,11 +31,6 @@ const BnB = () => {
     const element = document.getElementById('booking-form');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      setShowForm(true);
-      setTimeout(() => {
-        document.getElementById('booking-form')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
     }
   };
 
