@@ -2,44 +2,56 @@ import { Leaf, UtensilsCrossed, Heart } from 'lucide-react';
 
 const Mission = () => {
   return (
-    <section id="missione" className="py-24 bg-stone-100 relative">
-      <div className="container mx-auto px-4 md:px-8 max-w-5xl text-center">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-rustic-900 mb-4">
-          La Nostra Missione
-        </h2>
-        <div className="w-24 h-1 bg-rustic-400 mx-auto mb-12"></div>
+    <section id="missione" className="py-24 bg-stone-100 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-stone-100 via-stone-50 to-stone-100 pointer-events-none" />
 
-        <div className="grid md:grid-cols-3 gap-12">
-          {/* Card 1 */}
-          <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow border-t-4 border-rustic-500">
-            <div className="flex justify-center mb-6 text-rustic-600">
-              <UtensilsCrossed size={48} strokeWidth={1} />
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl relative">
+        <div className="max-w-4xl mx-auto text-center mb-14">
+          <p className="text-xs md:text-sm tracking-[0.3em] uppercase text-rustic-500">
+            I Valori della Trattoria
+          </p>
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-stone-900">
+            La nostra promessa a chi si siede a tavola
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+          <div className="relative rounded-3xl bg-white/80 backdrop-blur-xl border border-stone-200/70 px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="mb-6 inline-flex items-center justify-center rounded-full bg-rustic-50 p-4 text-rustic-600">
+              <UtensilsCrossed size={32} strokeWidth={1.25} />
             </div>
-            <h3 className="text-xl font-serif font-bold text-stone-800 mb-3">Cultura Gastronomica</h3>
-            <p className="text-stone-600 font-light leading-relaxed">
-              Siamo determinati a mantenere viva la nostra cultura gastronomica, trasmettendo il nostro amore e la nostra passione attraverso ogni piatto servito.
+            <h3 className="text-xl font-serif font-semibold text-stone-900 mb-3">
+              Cultura gastronomica
+            </h3>
+            <p className="text-sm md:text-base text-stone-600 leading-relaxed">
+              Ogni piatto nasce da ricette di famiglia e tecniche tramandate, per portare in tavola
+              l&apos;autenticità della cucina friulana con un tocco contemporaneo.
             </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow border-t-4 border-rustic-500">
-            <div className="flex justify-center mb-6 text-rustic-600">
-              <Heart size={48} strokeWidth={1} />
+          <div className="relative rounded-3xl bg-white/80 backdrop-blur-xl border border-stone-200/70 px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="mb-6 inline-flex items-center justify-center rounded-full bg-rustic-50 p-4 text-rustic-600">
+              <Heart size={32} strokeWidth={1.25} />
             </div>
-            <h3 className="text-xl font-serif font-bold text-stone-800 mb-3">Passione & Tradizione</h3>
-            <p className="text-stone-600 font-light leading-relaxed">
-              Vogliamo far rivivere e valorizzare la cucina tradizionale del Friuli per le generazioni future, con ricette tramandate da quattro generazioni.
+            <h3 className="text-xl font-serif font-semibold text-stone-900 mb-3">
+              Accoglienza di famiglia
+            </h3>
+            <p className="text-sm md:text-base text-stone-600 leading-relaxed">
+              Mettiamo al centro le persone, con un servizio attento e caloroso che fa sentire ogni
+              ospite parte della nostra casa.
             </p>
           </div>
 
-          {/* Card 3 */}
-          <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow border-t-4 border-rustic-500">
-            <div className="flex justify-center mb-6 text-rustic-600">
-              <Leaf size={48} strokeWidth={1} />
+          <div className="relative rounded-3xl bg-white/80 backdrop-blur-xl border border-stone-200/70 px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="mb-6 inline-flex items-center justify-center rounded-full bg-rustic-50 p-4 text-rustic-600">
+              <Leaf size={32} strokeWidth={1.25} />
             </div>
-            <h3 className="text-xl font-serif font-bold text-stone-800 mb-3">Ingredienti Locali</h3>
-            <p className="text-stone-600 font-light leading-relaxed">
-              Utilizziamo ingredienti locali di alta qualità per offrire esperienze gastronomiche che esaltino la ricca tradizione culinaria della regione.
+            <h3 className="text-xl font-serif font-semibold text-stone-900 mb-3">
+              Ingredienti del territorio
+            </h3>
+            <p className="text-sm md:text-base text-stone-600 leading-relaxed">
+              Lavoriamo con produttori locali e materie prime stagionali per esaltare l&apos;identità
+              del Friuli e ridurre l&apos;impatto sul territorio.
             </p>
           </div>
         </div>

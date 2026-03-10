@@ -1,39 +1,45 @@
 
 const History = () => {
   return (
-    <section id="storia" className="py-20 md:py-32 bg-stone-50 relative overflow-hidden">
-      {/* Texture overlay */}
-      <div className="absolute inset-0 bg-paper-texture opacity-20 pointer-events-none"></div>
+    <section id="storia" className="py-24 md:py-32 bg-stone-50 relative overflow-hidden">
+      <div className="absolute inset-0 bg-paper-texture opacity-30 pointer-events-none" />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-          {/* Image */}
-          <div className="w-full md:w-1/2 relative group">
-            <div className="absolute inset-0 bg-rustic-900 translate-x-3 translate-y-3 md:translate-x-6 md:translate-y-6 -z-10 rounded-sm"></div>
-            <img 
-              src="/images/177592604_4105853926133595_7338755891135402380_n.jpg" 
-              alt="Interno rustico della Trattoria" 
-              className="w-full h-auto object-cover rounded-sm shadow-xl grayscale hover:grayscale-0 transition-all duration-700"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="w-full md:w-1/2 space-y-6 text-center md:text-left z-10">
-            <div className="inline-block border-b-2 border-rustic-500 pb-1 mb-2">
-              <span className="text-rustic-600 font-serif italic text-lg">Dal 1928</span>
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl relative">
+        <div className="rounded-3xl bg-white/80 backdrop-blur-xl shadow-xl border border-stone-200/60 px-6 py-10 md:px-12 md:py-14">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div className="w-full md:w-1/2 relative">
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-rustic-900/70 to-rustic-600/60 translate-x-4 translate-y-4 -z-10" />
+              <img
+                src="/images/177592604_4105853926133595_7338755891135402380_n.jpg"
+                alt="Interno della Trattoria da Vanda"
+                className="w-full h-auto object-cover rounded-3xl shadow-2xl"
+              />
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 leading-tight">
-              La Nostra Storia
-            </h2>
-            <p className="text-stone-600 leading-relaxed font-light text-lg">
-              Dal 1928, la nostra famiglia gestisce una storica trattoria a San Martino di Codroipo, offrendo l'autentica cucina friulana. Con quattro generazioni di esperienza, siamo un punto di riferimento nella comunità locale.
-            </p>
-            <p className="text-stone-600 leading-relaxed font-light text-lg">
-              Oltre a offrire un'atmosfera accogliente e familiare, ci impegniamo a preservare le tradizioni e la cultura della regione. Siamo orgogliosi di essere parte integrante di San Martino di Codroipo e di essere un luogo di incontro e di convivialità per la comunità.
-            </p>
-            <p className="text-rustic-700 font-medium italic mt-4">
-              "Vi invitiamo a scoprire la nostra storia e a condividere con noi l'amore per la cucina friulana."
-            </p>
+
+            <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
+              <div className="inline-flex items-center gap-3 border border-rustic-100 bg-rustic-50/70 px-4 py-2 rounded-full">
+                <span className="w-1.5 h-1.5 rounded-full bg-rustic-500" />
+                <span className="text-rustic-700 font-serif text-sm tracking-[0.25em] uppercase">
+                  Dal 1928
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-stone-900 leading-tight">
+                Una storia di famiglia nel cuore del Friuli
+              </h2>
+              <p className="text-stone-600 leading-relaxed text-base md:text-lg">
+                Da quasi un secolo la nostra famiglia custodisce i sapori della cucina friulana,
+                trasformando la Trattoria da Vanda in un luogo di incontro, memoria e convivialità
+                a San Martino di Codroipo.
+              </p>
+              <p className="text-stone-600 leading-relaxed text-base md:text-lg">
+                Tra ricette tramandate, ingredienti del territorio e un&apos;accoglienza autentica,
+                continuiamo ogni giorno a servire piatti che raccontano la nostra terra e le persone
+                che la vivono.
+              </p>
+              <p className="text-rustic-700 font-medium italic text-base md:text-lg">
+                Vi aspettiamo per scrivere insieme il prossimo capitolo di questa storia.
+              </p>
+            </div>
           </div>
         </div>
       </div>

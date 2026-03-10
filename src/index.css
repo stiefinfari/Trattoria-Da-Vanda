@@ -3,12 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
   html {
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-stone-50 text-stone-950 antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-950;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+  }
+
+  a, button {
+    @apply outline-none;
+  }
+
+  :where(a, button, input, textarea, select):focus-visible {
+    @apply ring-2 ring-brand-400 ring-offset-2 ring-offset-stone-50;
   }
 }

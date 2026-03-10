@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local artifacts
+B&B _ Trattoria da Vanda.html
+B&B _ Trattoria da Vanda_files/
+menu_da_vanda_prompt.md
